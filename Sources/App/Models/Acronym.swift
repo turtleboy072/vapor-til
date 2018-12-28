@@ -33,4 +33,7 @@ extension Acronym {
         // 2
         return parent(\.userID)
     }
+    var categories: Siblings<Acronym, Category, AcronymCategoryPivot> {
+        return siblings()
+    }
 }
